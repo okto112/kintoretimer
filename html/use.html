@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>筋トレタイマー</title>
+  <link rel="stylesheet" href="../css/use.css">
+</head>
+
+<body>
+  <header>
+    <h1>筋トレタイマー</h1>
+    <div class="menu" id="open">
+      <p>－</p><p>－</p><p>－</p>
+    </div>
+  </header>
+
+  <div id="mask"> </div>
+  <div class="overlay">
+    <p id="close">×</p>
+    <nav>
+      <ul>
+        <li><a href="set.html">タイマー設定へ</a></li>
+        <li><a href="index.html">TOPに戻る</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <main>
+    <h2>使い方</h2>
+    <section class="contents">
+      <h2>もくじ</h2>
+      <nav class="mainnav">
+        <ul>
+          <li><a href="#ex1">筋トレタイマーとは</a></li>
+          <li><a href="#ex2">STEP1. タイマーを設定しよう！</a></li>
+          <li><a href="#ex3">STEP2. タイマーを操作しよう！</a></li>
+        </ul>
+      </nav>
+    </section>
+
+    <section class="explanation">
+      <div class="ex1">
+        <h2 id="ex1">筋トレタイマーとは</h2>
+          <p>時間を決めて筋トレをする際に使えるタイマーです。<br>
+            筋トレ時間と休憩時間(インターバル)、<br>
+            セット回数を設定しておくことで、スムーズに筋トレを行えます！</p>
+      </div>
+      <div class="ex2">
+        <h2 id="ex2">STEP1. タイマーを設定しよう！</h2>
+        <p>筋トレとインターバルの項目には時間、<br>
+        セット回数の項目には筋トレのセット数に応じて設定しよう！
+        <video controls src="../movie/set.mp4"></video></p>
+      </div>
+      <div class="ex3">
+        <h2 id="ex3">STEP2. タイマーを操作しよう！</h2>
+        <p>「セット完了！」を押すとタイマー画面に移動します。<br>
+        「スタート」を押すとカウントダウンが始まりタイマーが起動します。<br>
+        「ストップ」でタイマーを停止、「リセット」で筋トレ時間からやり直す事ができます。
+        <video controls src="../movie/timer.mp4"></video></p>
+      </div>
+    </section>
+  </main>
+  <script src="../js/use.js"></script>
+</body>
+</html>

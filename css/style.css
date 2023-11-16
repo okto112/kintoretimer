@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+body,header,h1 {
+  margin: 0;
+  user-select: none;
+}
+
+body {
+  font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+}
+
+/* header */
+header {
+  background: orange;
+  color: white;
+  font-size: 26px;
+  text-align: center;
+  padding: 100px;
+}
+
+/* main */
+main {
+  display: flex;
+  flex-flow: column;
+  margin-top: 20px;
+  padding: 30px;
+}
+
+ a {
+  text-decoration: none;
+  background: orange;
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  margin: 40px auto 0;
+  padding: 4px;
+  cursor: pointer;
+}
+
+a:hover {
+  opacity: .6;
+}
+
+@media (max-width:600px) {
+  header{
+    font-size: 18px;
+    padding: 100px 60px;
+  }
+
+  main {
+    margin-top: 60px;
+  }
+}

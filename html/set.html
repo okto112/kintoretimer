@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4KWWTWSK7V"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-4KWWTWSK7V');
+  </script>
+
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-NCGVRJRJ');</script>
+  <!-- End Google Tag Manager -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>筋トレタイマー</title>
+  <!-- <link rel="stylesheet" href="https://toshiki112.github.io/kintoretimer/set.css"> -->
+  <link rel="stylesheet" href="../css/set.css">
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NCGVRJRJ" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <header>
+    <h1>筋トレタイマー</h1>
+    <div class="menu" id="open">
+      <p>－</p>
+      <p>－</p>
+      <p>－</p>
+    </div>
+  </header>
+
+  <div id="mask"> </div>
+  <div class="overlay">
+    <p id="close">×</p>
+    <nav>
+      <ul>
+        <li id="allreset">タイマーをリセット</li>
+        <li><a href="use.html">使い方</a></li>
+        <li><a href="index.html">TOPに戻る</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <main>
+    <div class="setlist">
+      <section>
+        <p class="timer">筋トレ</p>
+        <div>
+          <select name="main1" class="maintimer" id="main1"></select>
+          <p>:</p>
+          <select name="main2" class="maintimer" id="main2"></select>
+          <p>:</p>
+          <select name="main3" class="maintimer" id="main3"></select>
+        </div>
+      </section>
+      <section>
+        <p class="intimer">インターバル</p>
+        <div>
+          <select name="interval1" class="interval" id="interval1"></select>
+          <p>:</p>
+          <select name="interval2" class="interval" id="interval2"></select>
+          <p>:</p>
+          <select name="interval3" class="interval" id="interval3"></select>
+        </div>
+      </section>
+      <section>
+        <p class="setnum">セット回数</p>
+        <p><input type="number" min="1" id="setnum">回</p>
+      </section>
+      <section>
+        <a href="timer.html">セット完了！</a>
+      </section>
+    </div>
+  </main>
+  <!-- <script src="https://toshiki112.github.io/kintoretimer/set.js"></script> -->
+  <script src="../js/set.js"></script>
+</body>
+
+</html>

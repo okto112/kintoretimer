@@ -1,0 +1,287 @@
+@charset "utf-8";
+
+body,header,h1,p {
+  margin: 0;
+  user-select: none;
+}
+
+body {
+  font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+}
+
+/* header */
+header {
+  display: flex;
+  background: orange;
+  color: white;
+  padding: 10px;
+}
+
+header h1 {
+  font-size: 30px;
+  margin: 0 auto;
+  padding-left: 60px;
+}
+
+.menu p {
+  font-size: 50px;
+  line-height: 12px;
+  cursor: pointer;
+}
+
+
+/* overlay */
+.overlay {
+  background: orange;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 60px 60px 20px 20px;
+  opacity: 0;
+  transform: translate(100px, -100px);
+  pointer-events: none;
+  transition: all .2s;
+  z-index: 10;
+}
+
+.overlay.show {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(0, 0);
+}
+
+#mask.show {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.overlay #close {
+  position: absolute;
+  top: 10px;
+  right: 16px;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.overlay ul {
+  list-style: none;
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.overlay li {
+  margin-top: 8px;
+}
+
+li:hover {
+  opacity: .6;
+  cursor: pointer;
+}
+
+li > a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* main */
+
+h2 {
+  color: black;
+  background: white;
+  font-size: 20px;
+  text-align: center;
+  border: 4px solid orange;
+  border-radius: 6px;
+  width: 120px;
+  margin: 20px ;
+  padding: 1px;
+}
+
+.contents {
+  position: relative;
+  margin-top: 30px;
+}
+
+.contents h2{
+  position: absolute;
+  top: -24px;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.mainnav {
+  width: 340px;
+  border: 4px solid orange;
+  border-radius: 20px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.mainnav li {
+  list-style: none;
+  text-decoration: underline;
+}
+
+.explanation {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.ex1 {
+  position: relative;
+  margin-top: 80px;
+}
+
+.ex1 h2 {
+  position: absolute;
+  top: -24px;
+  left: -20px;
+  width: 220px;
+  margin: 0;
+}
+
+.ex1 p {
+  border: 4px solid orange;
+  border-radius: 20px;
+  padding: 30px 20px 20px;
+}
+
+.ex2 {
+  position: relative;
+  margin-top: 80px;
+}
+
+.ex2 h2 {
+  position: absolute;
+  top: -24px;
+  left: -20px;
+  width: 340px;
+  margin: 0;
+}
+
+.ex2 p {
+  border: 4px solid orange;
+  border-radius: 20px;
+  padding: 30px 20px 20px;
+}
+
+.ex3 {
+  position: relative;
+  margin-top: 80px;
+}
+
+.ex3 h2 {
+  position: absolute;
+  top: -24px;
+  left: -20px;
+  width: 340px;
+  margin: 0;
+}
+
+.ex3 p {
+  border: 4px solid orange;
+  border-radius: 20px;
+  padding: 30px 20px 20px;
+}
+
+video {
+  width: 540px;
+  height: 400px;
+  margin-left: 10px;
+}
+
+
+@media (max-width:600px){
+  header h1 {
+    font-size: 20px;
+    margin-top: 4px;
+  }
+
+  .overlay ul {
+    font-size: 18px;
+  }
+
+  h2 {
+    font-size: 16px;
+    width: 90px;
+    margin: 8px ;
+  }
+
+  .mainnav {
+    width: 240px;
+    padding: 14px 0 10px 10px;
+  }
+
+  .mainnav ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  .explanation {
+    width: 90%;
+  }
+
+  .ex1 {
+    margin-top: 60px;
+  }
+
+  .ex1 h2 {
+    top: -16px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 200px;
+  }
+  
+  .ex1 p {
+    padding: 30px 10px 10px;
+  }
+
+  .ex2 {
+    margin-top: 60px;
+  }
+  
+  .ex2 h2 {
+    top: -10px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 260px;
+  }
+  
+  .ex2 p {
+    border: 4px solid orange;
+    padding: 30px 10px 10px;
+  }
+
+  .ex3 {
+    margin-top: 60px;
+  }
+  
+  .ex3 h2 {
+    top: -10px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 260px;
+  }
+  
+  .ex3 p {
+    padding: 30px 10px 10px;
+  }
+
+  video {
+    width: 100%;
+    height: 200px;
+    margin-left: 0px;
+  }
+}

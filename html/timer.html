@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>筋トレタイマー</title>
+  <link rel="stylesheet" href="../css/timer.css">
+</head>
+<body>
+  <header>
+    <h1>筋トレタイマー</h1>
+    <div class="menu" id="open">
+      <p>－</p><p>－</p><p>－</p>
+    </div>
+  </header>
+
+  <div id="mask"> </div>
+  <div class="overlay">
+    <p id="close">×</p>
+    <nav>
+      <ul>
+        <li><a href="set.html">タイマー設定に戻る</a></li>
+        <li><a href="use.html">使い方</a></li>
+        <li><a href="index.html">TOPに戻る</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <main>
+    <p id="settext"></p>
+    <div class="frame">
+      <div class="timer">
+        <h1 id="timer1" class="hidden"></h1>
+        <h2 id="timer2" class="hidden"></h2>
+        <h3 id="count" class="hidden"></h3>
+        <p id="toptext">スタートボタンで開始！</p>
+      </div>
+      <section class="btnarea">
+        <button id="reset" class="off">リセット</button>
+        <button id="stop" class="hidden">ストップ</button>
+        <button id="start">スタート</button>
+      </section>
+    </div>
+  </main>
+  <script src="../js/timer.js"></script>
+</body>
+</html>
