@@ -15,8 +15,8 @@
   const timer1 = document.getElementById('timer1');
   const timer2 = document.getElementById('timer2');
   const timer = document.querySelector('.timer');
-  const music1 = new Audio('../music/Countdown.mp3');
-  const music2 = new Audio('../music/Alarm.mp3');
+  const music1 = new Audio('./music/Countdown.mp3');
+  const music2 = new Audio('./music/Alarm.mp3');
 
   const maintimer = localStorage.getItem('maintimer')
   const interval = localStorage.getItem('interval');
